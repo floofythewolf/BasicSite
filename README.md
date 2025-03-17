@@ -1,2 +1,4 @@
 # BasicSite
-School Purposes.
+This is only for School Purposes.
+
+Feel free to copy the code, but not all of it.
