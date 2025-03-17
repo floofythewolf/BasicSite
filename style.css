@@ -16,7 +16,7 @@ body {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  color: rgb(187, 187, 187); 
+  color: white; 
 }
 .nav-links {
   list-style-type: none;
