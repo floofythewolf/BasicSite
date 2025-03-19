@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cascading Style Sheet</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+        /* Example of basic button styling */
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+  </style>
+ </head>
+ <body>
+  <header class="header">
+    <div class="logo">Cascading Style Sheet</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Homepage</a></li>
+    </ul>
+  </header>
+  <section id="item1">
+  <center>
+    <h1>Understanding CSS</h1>
+    <img src="Logo-C.png" alt="HTML" width="70px" height="100px">
+  </center>
+  </section>
+<section id="item2">
+    <h2>What is CSS?</h2>
+    <p>CSS (Cascading Style Sheets) is a language used to style and layout HTML elements. While HTML structures the content of a webpage, CSS is responsible for its visual appearance. It controls colors, fonts, spacing, positioning, and more, allowing developers to create visually appealing websites.</p>
+
+    <h2>CSS Basics</h2>
+    <p>CSS is written using selectors, properties, and values:</p>
+    <pre>
+        selector {
+            property: value;
+        }
+    </pre>
+    <p>Selectors target HTML elements, while properties define how they should appear, and values specify the settings for those properties.</p>
+
+    <h3>Selectors</h3>
+    <p>Selectors are used to target HTML elements that you want to style. There are several types of selectors in CSS:</p>
+    <ul>
+        <li><strong>Element Selector</strong>: Targets all instances of an HTML element. Example: <code>p { color: red; }</code> changes the color of all paragraphs.</li>
+        <li><strong>Class Selector</strong>: Targets elements with a specific class attribute. Example: <code>.button { background-color: blue; }</code> applies to elements with the class "button".</li>
+        <li><strong>ID Selector</strong>: Targets an element with a specific ID attribute. Example: <code>#header { font-size: 24px; }</code> applies only to the element with the ID "header".</li>
+    </ul>
+
+    <h3>Properties</h3>
+    <p>CSS properties determine how elements are styled. Some common properties include:</p>
+    <ul>
+        <li><strong>color</strong>: Sets the text color.</li>
+        <li><strong>font-size</strong>: Sets the size of the text.</li>
+        <li><strong>background-color</strong>: Sets the background color of an element.</li>
+        <li><strong>margin</strong>: Sets the space outside an element.</li>
+        <li><strong>padding</strong>: Sets the space inside an element.</li>
+        <li><strong>border</strong>: Adds borders around elements.</li>
+        <li><strong>text-align</strong>: Aligns text inside an element (left, right, center).</li>
+    </ul>
+
+    <h3>Values</h3>
+    <p>Values define the specific settings for each CSS property. Here are some examples:</p>
+    <ul>
+        <li><strong>color:</strong> red, blue, #3498db, rgba(255, 0, 0, 0.5) (color values).</li>
+        <li><strong>font-size:</strong> 16px, 1.5em (size values).</li>
+        <li><strong>background-color:</strong> #f4f4f4, rgba(0, 0, 0, 0.1) (background values).</li>
+    </ul>
+
+    <h2>Applying CSS to HTML</h2>
+    <p>There are three main ways to apply CSS to an HTML document:</p>
+    <ul>
+        <li><strong>Inline CSS</strong>: Applied directly in the HTML element using the <code>style</code> attribute.</li>
+        <pre>
+        <code>&lt;h1 style="color: blue;"&gt;This is a Heading&lt;/h1&gt;</code>
+        </pre>
+        <li><strong>Internal CSS</strong>: Defined within the <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section of the HTML document.</li>
+        <pre>
+        <code>&lt;style&gt;
+        body {
+            background-color: #f4f4f9;
+        }
+        &lt;/style&gt;</code>
+        </pre>
+        <li><strong>External CSS</strong>: Defined in an external stylesheet, which is linked to the HTML document using the <code>&lt;link&gt;</code> tag in the <code>&lt;head&gt;</code> section.</li>
+        <pre>
+        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+        </pre>
+    </ul>
+
+    <h3>Example of CSS in Action</h3>
+    <p>Here’s an example of applying a simple CSS style to a button:</p>
+    <button class="button">Click Me</button>
+
+    <h2>Why is CSS Important?</h2>
+    <p>CSS is crucial because it controls the look and feel of a webpage, making it more engaging and user-friendly. Without CSS, websites would be plain, unstyled text. With CSS, you can create visually stunning layouts, responsive designs, and interactive elements that make the web more enjoyable and accessible to users.</p>
+</section>
+<footer class="item3" style="padding: 50px; background-color: #95a5a6;">
+</footer>
+ </body>
+</html>
